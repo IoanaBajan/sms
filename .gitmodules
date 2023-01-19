@@ -1,0 +1,6 @@
+[submodule "code/sms-sender"]
+	path = code/sms-sender
+	url = https://github.com/IoanaBajan/sms-sender.git
+[submodule "code/blog-webapp"]
+	path = code/blog-webapp
+	url = https://github.com/dragosdumitra/cloud_computing.git

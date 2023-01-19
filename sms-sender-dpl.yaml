@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sms-sender-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sms-sender
+  template:
+    metadata:
+      labels:
+        app: sms-sender
+    spec:
+      containers:
+        - name: sms-sender
+          image: sms-sender:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8008
+---
